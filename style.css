@@ -1,0 +1,25 @@
+body {
+    background-color:aquamarine;
+    background-image: linear-gradient(75deg,white,#2eadc2);
+}
+
+#blink{
+    font-size:20px;
+    font-weight: bold;
+    color: #16d516;
+    transition: 0.2s;
+}
+
+.button{
+    width:150px;
+    height: 30px;
+    color: rgb(109, 53, 53);
+}
+
+.lgButton{
+    width: 215px;
+    height: 30px;
+}
+#data {
+    background-image: linear-gradient(185deg, white, skyblue);
+}

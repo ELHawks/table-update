@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    created by ELijah Hawks
+    csc102 class
+    10012022
+    elijah552214@gmail.com
+    -->
+
+<head>
+    <script src="code.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="lanchCodeData.js"></script>
+    <script src="dataLoader.js"></script>
+    <script>
+        var theTime= new Date();
+        var tempTime = new Date();
+        var lastIteration = 0;
+        var time_interval = 500;
+        var running =true;
+        var index = 0;
+        var timer;
+
+        var data = getData();
+    </script>
+    <title>
+        prof Prster's UATSpace page
+    </title>
+
+</head>
+
+<body>
+    <table>
+        <td><img src ="UATspaceLogo-1.jpg"></td>
+        <td>
+            <h1>
+                UAT Space Program
+            </h1> 
+        </td>
+    </table>
+    <table id="data" border="2" width="70%">
+        <col style="width: 35%">
+        <col style="width: 35%">
+        <thead>
+            <th>Data Type</th>
+            <th>
+                Reading
+            </th>
+        </thead>
+        <tbody>
+            <tr id="seconds"></tr>
+            <tr id="Latitude"></tr>
+            <tr id="Longitude"></tr>
+            <tr id=" GpsSensor_alt"></tr>
+            <tr id=" BPMSensor_alt"></tr>
+            <tr id=" BMPSensor_pres"></tr>
+            <tr id=" BMPSensor_temp"></tr>
+            <tr id=" digSensor_temp"></tr>
+            <tr id=" CSSSensor_temp"></tr>
+            <tr id=" CSSSensor_eCO2"></tr>
+            <tr id=" CSSSensor_TVOC"></tr>
+            <tr id=" UV"></tr>
+            <tr id=" accelX"></tr>
+            <tr id=" accelY"></tr>
+            <tr id=" accelZ"></tr>
+            <tr id=" magneticX"></tr>
+            <tr id=" magneticY"></tr>
+            <tr id=" magneticZ"></tr>
+            <tr id=" gyrowX"></tr>
+            <tr id=" GyrowY"></tr>
+            <tr id=" gyrowZ"></tr>
+        </tbody>
+    </table>
+    <br>
+     The Current Time Is: <div id = "timeStamp"> Press The Start for the Current Time</div>
+
+    <body>
+        
+        <button  id="startButton" onclick="Start();">
+            Start
+        </button>
+        </button>
+        <br>
+        <br>
+        <button id="stopButton" onclick="Stop();">
+            Stop
+        </button>
+        <br>
+        <br>
+        <button class="lgButton" onclick="playStation();">Play Station noise</button>
+        <br>
+        <br>
+        <button class="lgButton" onclick="playTheBells();">Play Station music</button>
+
+        <h3>Let's play Craps!!!!</h3>
+        <div id="Crapsresults"> Craps Results</div>
+        <div id="Die1results"> Die1 Results</div>
+        <div id="Die2results"> Die2 Results</div>
+        <div id="Sumresults"> Sum Results</div>
+        <button onclick="playCraps();"> playCraps</button>
+
+        document.write("Simple Craps")
+        document.write("<br />")
+        play();
+
+
+    </body>
+
+</html>

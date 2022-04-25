@@ -1,0 +1,14 @@
+body{
+    background-color: silver;
+}
+.submitButton{
+    background-color: snow;
+    width: 100px;
+    height: 35px;
+    border-radius: 13px;
+    border-color: red;
+}
+#loginButton{
+    border-radius: 13px;
+    border-color: red;
+}
