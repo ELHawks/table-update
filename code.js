@@ -4,14 +4,14 @@ document.getElementById("startButton").disabled = true;
 document.getElementById("stopButton").disabled = false;
 document.getElementById("data").rows["seconds"].innerHTML = "Reading Data....";
 index = 0;
-timer = setInterval( updateDisplay,time_interval );
+timer = setInterval(updateDisplay, time_interval );
 }
 
 function Stop(){
     console.log("Stop() started");
    clearInterval(timer);
+document.getElementById("startButton").disabled = false;
 document.getElementById("stopButton").disabled = true;
-document.getElementById("stopButton").disabled = false;
     }
 
 // for this assignment count down from 50 to 0 by 5's 
